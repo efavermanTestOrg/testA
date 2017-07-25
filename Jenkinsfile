@@ -6,10 +6,13 @@ pipeline {
         parallel(
           "test 1": {
             echo 'hi'
-            sh 'ls'
-            listAWSAccounts()
-            milestone(ordinal: 1, label: 'first mile stone')
-            isUnix()
+            node(label: 'qa_linux_awscli') {
+              ws(dir: 'eytan') {
+                zip(zipFile: 'zdfasdf', archive: true)
+              }
+              
+            }
+            
             
           },
           "this at same time": {
@@ -21,7 +24,6 @@ pipeline {
     }
     stage('stage 23') {
       steps {
-        isUnix()
         node(label: 'qa-windows_build') {
           bat 'dir'
         }
