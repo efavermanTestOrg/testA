@@ -17,6 +17,14 @@ pipeline {
           },
           "this at same time": {
             awsIdentity()
+            echo 'ijnlkj'
+            
+          },
+          "eeeeeee": {
+            catchError() {
+              error 'fghfghd'
+            }
+            
             
           }
         )
