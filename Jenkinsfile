@@ -8,6 +8,7 @@ pipeline {
             echo 'hi'
             node(label: 'qa_linux_awscli') {
               ws(dir: 'eytan') {
+                checkout scm
                 zip(zipFile: 'zdfasdf', archive: true)
               }
               
@@ -32,7 +33,7 @@ pipeline {
     }
     stage('stage 23') {
       steps {
-        node(label: 'qa-windows_build') {
+        node(label: 'qa_windows_build') {
           bat 'dir'
         }
         
