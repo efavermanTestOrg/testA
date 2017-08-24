@@ -10,6 +10,7 @@ pipeline {
               ws(dir: 'eytan') {
                 checkout scm
                 zip(zipFile: 'zdfasdf', archive: true)
+                echo "this is with checkout"
               }
               
             }
