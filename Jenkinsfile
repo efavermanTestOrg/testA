@@ -9,8 +9,8 @@ pipeline {
             node(label: 'qa_linux_awscli') {
               ws(dir: 'eytan') {
                 // checkout scm
-                deleteDir
-                zip(zipFile: 'zdfasdf', archive: true)
+             
+                zip(zipFile: "zdfasdf_$BUILD_ID", archive: true)
                 echo "this is withOUT checkout"
               }
               
