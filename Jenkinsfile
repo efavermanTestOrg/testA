@@ -11,7 +11,7 @@ pipeline {
                 checkout scm
 
                 zip(zipFile: "new-zdfasssssdf_$BUILD_TAG", archive: true)
-                echo "this is withOUT checkout!!!!!asdc!!"
+                echo "new this is withOUT checkout!!!!!asdc!!"
               }
               
             }
