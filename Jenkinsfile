@@ -10,8 +10,10 @@ pipeline {
               ws(dir: 'eytan') {
                 checkout scm
 
+
                 zip(zipFile: "new-zdfasssssdf_$BUILD_TAG", archive: true)
                 echo "new2 this is withOUT checkout!!!!!asdc!!"
+
               }
               
             }
