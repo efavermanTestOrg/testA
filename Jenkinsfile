@@ -25,7 +25,7 @@ pipeline {
           },
           "eeeeeee": {
             catchError() {
-              error 'fghfghd'
+              //error 'fghfghd'
             }
             
             
