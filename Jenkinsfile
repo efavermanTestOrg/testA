@@ -11,7 +11,7 @@ pipeline {
                 checkout scm
              
                 zip(zipFile: "zdfasdf_$BUILD_ID", archive: true)
-                echo "this is withOUT checkout!!!"
+                echo "this is withOUT checkout!!!!!!!"
               }
               
             }
