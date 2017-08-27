@@ -9,9 +9,11 @@ pipeline {
             node(label: 'qa_linux_awscli') {
               ws(dir: 'eytan') {
                 checkout scm
-             
-                zip(zipFile: "zdfasdf_$BUILD_TAG", archive: true)
-                echo "this is withOUT checkout!!!"
+
+
+                zip(zipFile: "new-zdfasssssdf_$BUILD_TAG", archive: true)
+                echo "new2 this is withOUT checkout!!!!!asdc!!"
+
               }
               
             }
